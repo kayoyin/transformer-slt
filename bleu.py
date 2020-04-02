@@ -2,8 +2,8 @@ import sys
 from nltk.translate.bleu_score import corpus_bleu, sentence_bleu
 
 if __name__ == "__main__":
-    pred_path = sys.argv[1]
-    n = int(sys.argv[2])
+    n = int(sys.argv[1])
+    pred_path = sys.argv[2]
     data_path = sys.argv[3]
     weights = [1/n] * n + [0] * (4-n)
     with open(pred_path, "r") as file:

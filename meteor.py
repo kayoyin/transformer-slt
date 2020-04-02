@@ -1,6 +1,6 @@
 import sys
 import nltk
-#nltk.download('wordnet')
+nltk.download('wordnet')
 
 if __name__ == "__main__":
     pred_path = sys.argv[1]

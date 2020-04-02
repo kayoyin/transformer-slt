@@ -6,7 +6,7 @@ import itertools
 import collections
 import pkg_resources
 from io import open
-#nltk.download('punkt')
+nltk.download('punkt')
 
 class Rouge:
     DEFAULT_METRICS = {"rouge-n"}

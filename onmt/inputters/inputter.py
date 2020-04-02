@@ -14,14 +14,10 @@ from torchtext.vocab import Vocab
 from torchtext.data.utils import RandomShuffler
 
 from onmt.inputters.text_dataset import text_fields, TextMultiField
-from onmt.inputters.image_dataset import image_fields
-from onmt.inputters.audio_dataset import audio_fields
-from onmt.inputters.vec_dataset import vec_fields
 from onmt.utils.logging import logger
 # backwards compatibility
 from onmt.inputters.text_dataset import _feature_tokenize  # noqa: F401
-from onmt.inputters.image_dataset import (  # noqa: F401
-    batch_img as make_img)
+
 
 import gc
 
@@ -142,10 +138,7 @@ def get_fields(
         'it is not possible to use dynamic_dict with non-text input'
     fields = {}
 
-    fields_getters = {"text": text_fields,
-                      "img": image_fields,
-                      "audio": audio_fields,
-                      "vec": vec_fields}
+    fields_getters = {"text": text_fields}
 
     src_field_kwargs = {"n_feats": n_src_feats,
                         "include_lengths": True,
