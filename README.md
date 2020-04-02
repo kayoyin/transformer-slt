@@ -54,16 +54,16 @@ python translate.py -model model [model2 model3 ...] -src data/phoenix2014T.test
 ### Scoring
 ```
 # BLEU-1,2,3,4
-python bleu.py 1 pred.txt data/phoenix2014T.test.de
-python bleu.py 2 pred.txt data/phoenix2014T.test.de
-python bleu.py 3 pred.txt data/phoenix2014T.test.de
-python bleu.py 4 pred.txt data/phoenix2014T.test.de
+python tools/bleu.py 1 pred.txt data/phoenix2014T.test.de
+python tools/bleu.py 2 pred.txt data/phoenix2014T.test.de
+python tools/bleu.py 3 pred.txt data/phoenix2014T.test.de
+python tools/bleu.py 4 pred.txt data/phoenix2014T.test.de
 
 # ROUGE
-python rouge.py pred.txt data/phoenix2014T.test.de
+python tools/rouge.py pred.txt data/phoenix2014T.test.de
 
 # METEOR
-python meteor.py pred.txt data/phoenix2014T.test.de
+python tools/meteor.py pred.txt data/phoenix2014T.test.de
 ```
 
 # To dos:
