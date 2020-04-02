@@ -1,3 +1,5 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/sign-language-translation-with-transformers-1/sign-language-translation-on-rwth-phoenix)](https://paperswithcode.com/sota/sign-language-translation-on-rwth-phoenix?p=sign-language-translation-with-transformers-1)
+
 # transformer-slt
 This repository gathers data and code supporting the experiments in the paper [Sign Language Translation with Transformers](https://arxiv.org/abs/2004.00588).
 
