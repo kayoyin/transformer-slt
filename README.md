@@ -72,10 +72,15 @@ python tools/meteor.py pred.txt data/phoenix2014T.test.de
 # Reference
 Please cite the paper below if you found the resources in this repository useful:
 ```
-@misc{yin2020sign,
-    title={Sign Language Translation with Transformers},
-    author={Kayo Yin},
-    year={2020},
-    howpublished={arXiv:2004.00588}
-}
+@article{yin2020sign,
+
+  title={Sign Language Translation with Transformers},
+
+  author={Kayo Yin},
+
+  journal={arXiv preprint arXiv:2004.00588},
+
+  year={2020}
+
+} 
 ```
